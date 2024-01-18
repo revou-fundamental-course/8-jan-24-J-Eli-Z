@@ -107,7 +107,6 @@ function calculate() {
 }
 
 function reset() {
-    document.getElementById("inputLength").value = 0;
-    document.getElementById("inputWidth").value = (document.getElementById("inputWidth")) ? 0 : "";
-    document.getElementById("resultCalculation").textContent = ""
+    document.getElementById("inputDiv").reset();
+    document.getElementById("resultCalculation").textContent = "";
 }

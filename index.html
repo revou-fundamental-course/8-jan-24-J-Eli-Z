@@ -31,7 +31,7 @@
     <div class="flexColumn mainBody">
         <div class="flexRow rowTitle">
             <h1 class="buttonMethod" id="shapeName">Square</h1>
-            <button class="buttonMethod" onclick="changeClassButtonMethod()" id="buttonChangeMethod">area</button>
+            <button class="buttonMethod" onclick="changeClassButtonMethod()" id="buttonChangeMethod">area <span style="float: right; color: #AD4326;">Switch</span></button>
         </div>
 
         <br>
@@ -44,9 +44,9 @@
 
         <div class="flexColumn">
             <h2 id="calculateTitle">Calculate The Area of a Square</h2>
-            <div class="flexColumn" id="inputDiv">
+            <form class="flexColumn" id="inputDiv">
                 <input class="inputBox" type="number" placeholder="Side Length" id="inputLength">
-            </div>
+            </form>
             <div id="resultCalculation">
                 
             </div>
@@ -58,6 +58,6 @@
         </div>
     </div>
     
-    <script src="./js/script.js"></script>
 </body>
+<script src="./js/script.js"></script>
 </html>
