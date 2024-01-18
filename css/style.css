@@ -22,6 +22,11 @@ button{
 button:hover {
     cursor: pointer;
 }
+
+button:disabled {
+    background-color: #761b02;
+}
+
 /* class */
 .subtitle {
     font-style: italic;

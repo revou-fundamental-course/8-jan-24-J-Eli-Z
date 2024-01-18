@@ -1,6 +1,32 @@
 let buttonModeClass="square", buttonModeClass2="rectangle",
 buttonMethodClass="area", Lenght, Width;
 
+const inputValidation1 = document.getElementById("inputLength");
+const inputValidation2 = document.getElementById("inputWidth");
+const calculateButton = document.getElementById("calculateButton");
+
+function validateInput() {
+    const integerRegex = /^-?\d+$/;
+    return integerRegex.test(input)
+}
+
+inputValidation1.addEventListener('keypress', function() {
+    const inputValue = inputvalidation1.ariaValueMax.trim()
+    if(validateInput(inputValue)) {
+        calculateButton.disabled = false
+    } else {
+        calculateButton.disabled = true
+    }
+})
+
+inputValidation2.addEventListener('keypress', function() {
+    const inputValue = inputvalidation2.ariaValueMax.trim()
+    if(validateInput(inputValue)) {
+        calculateButton.disabled = false
+    } else {
+        calculateButton.disabled = true
+    }
+})
 
 function scanButtonModeClass() {
     buttonModeClass = (document.getElementById("defaultMode").classList.contains("square")) ? "square" : "rectangle";
